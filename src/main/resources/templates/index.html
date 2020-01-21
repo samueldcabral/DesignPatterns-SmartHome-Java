@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Listagem de Alunos</title>
+</head>
+<body>
+
+ <h1 class="text-primary" th:text="${room}"></h1>
+ 
+ <hr>
+	<div class=" mx-auto">
+		<div th:text="${device.name}"></div>
+		<img th:src="@{lamp-on.png}" th:if="${device.isTurnedOn}"/>
+		<img th:src="@{lamp-off.png}" th:if="${!device.isTurnedOn}"/>
+	</div>
+</body>
+</html>
