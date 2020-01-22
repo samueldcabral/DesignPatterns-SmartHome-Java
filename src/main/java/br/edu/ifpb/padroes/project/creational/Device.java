@@ -2,7 +2,7 @@ package br.edu.ifpb.padroes.project.creational;
 
 public interface Device {
 	
-	public void createDevice();
+	public String createDevice();
 	
 	public void toggle();
 
