@@ -6,14 +6,14 @@ public class KitchenFactory implements RoomFactory{
 	
 	@Override
 	public Device createDevice() {
-		return new SimpleLight();
+		return new DimmableLight();
 	}
 
-	@Override
-	public void attachDevice() {
-		// TODO Auto-generated method stub
+	//@Override
+	//public void attachDevice() {
+	//	// TODO Auto-generated method stub
 		
-	}
+	//}
 
 	public String getName() {
 		return name;

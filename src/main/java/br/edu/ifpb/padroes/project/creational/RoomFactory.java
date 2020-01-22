@@ -4,5 +4,5 @@ public interface RoomFactory {
 	
 	public Device createDevice();
 	
-	public void attachDevice();
+	//public void attachDevice();
 }
