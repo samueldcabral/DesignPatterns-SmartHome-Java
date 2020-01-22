@@ -17,7 +17,14 @@ public class SimpleLight implements Device {
 	public void toggle() {
 		// TODO Auto-generated method stub 
 		this.isTurnedOn = !this.isTurnedOn;
-		System.out.println("Toggle for SimpleLight is " + this.isTurnedOn);
+		System.out.println("Toggle for SimpleLight status is " + this.isTurnedOn);
+		
+	}
+
+	@Override
+	public void turnOn() {
+		this.isTurnedOn = true;
+		System.out.println("SimpleLight is ON - " + this.isTurnedOn);
 	}
 	
 

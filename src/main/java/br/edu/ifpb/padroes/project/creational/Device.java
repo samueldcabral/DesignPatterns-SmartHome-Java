@@ -5,5 +5,7 @@ public interface Device {
 	public String createDevice();
 	
 	public void toggle();
+	
+	public void turnOn();
 
 }

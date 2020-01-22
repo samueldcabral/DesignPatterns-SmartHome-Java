@@ -6,6 +6,7 @@ public class LivingRoomFactory implements RoomFactory{
 
 	@Override
 	public Device createDevice() {
+		System.out.println("Creating a new device (Simple light) for Living Room using Factory");
 		return  new SimpleLight();
 		// TODO Auto-generated method stub
 		

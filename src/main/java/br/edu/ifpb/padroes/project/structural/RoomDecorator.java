@@ -11,4 +11,15 @@ public abstract class RoomDecorator extends SpecialScenario{
     public String getNome() {
         return scenario.getNome()  + " + " + nome;
     }
+    
+    public void turnOff() {
+		if(device != null) {
+			device.toggle();
+		}
+		
+		if(scenario.device != null) {
+			scenario.device.toggle(); 
+		}
+	
+    }
 }

@@ -6,6 +6,7 @@ public class KitchenFactory implements RoomFactory{
 	
 	@Override
 	public Device createDevice() {
+		System.out.println("Creating a new device (Dimmable light) for Kitchen using Factory");
 		return new DimmableLight();
 	}
 
